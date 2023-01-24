@@ -13,7 +13,7 @@ const functionIntervalMs = async (
 	do {
 		console.log(`iteration ${i} pis ici c'est la string: ${uneString}`);
 
-		await pause(interval);
+		await pause(interval); //we do a little pause for the time being
 		i++;
 		duree--;
 	} while (duree >= 0);
