@@ -50,7 +50,7 @@ var functionIntervalMs = function (interval, duree, uneString) { return __awaite
                 console.log("iteration ".concat(i, " pis ici c'est la string: ").concat(uneString));
                 return [4 /*yield*/, pause(interval)];
             case 2:
-                _a.sent();
+                _a.sent(); //we do a little pause for the time being
                 i++;
                 duree--;
                 _a.label = 3;
