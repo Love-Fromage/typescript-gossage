@@ -6,7 +6,7 @@ const functionIntervalMs = async (
 	uneString?: string
 ) => {
 	let i: number = 0;
-	// interval = interval / 1000;
+
 	if (uneString == undefined) {
 		uneString = "Non definie";
 	}
