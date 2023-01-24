@@ -35,21 +35,20 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var _this = this;
-var sleep = function (ms) { return new Promise(function (r) { return setTimeout(r, ms); }); };
+var pause = function (ms) { return new Promise(function (r) { return setTimeout(r, ms); }); };
 var functionIntervalMs = function (interval, duree, uneString) { return __awaiter(_this, void 0, void 0, function () {
     var i;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
                 i = 0;
-                // interval = interval / 1000;
                 if (uneString == undefined) {
                     uneString = "Non definie";
                 }
                 _a.label = 1;
             case 1:
                 console.log("iteration ".concat(i, " pis ici c'est la string: ").concat(uneString));
-                return [4 /*yield*/, sleep(interval)];
+                return [4 /*yield*/, pause(interval)];
             case 2:
                 _a.sent();
                 i++;

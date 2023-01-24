@@ -1,4 +1,4 @@
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const functionIntervalMs = async (
 	interval: number,
@@ -13,7 +13,7 @@ const functionIntervalMs = async (
 	do {
 		console.log(`iteration ${i} pis ici c'est la string: ${uneString}`);
 
-		await sleep(interval);
+		await pause(interval);
 		i++;
 		duree--;
 	} while (duree >= 0);
